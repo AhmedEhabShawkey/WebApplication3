@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Lib\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Remove="wwwroot\Lib\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\Lib\bootstrap\js\bootstrap.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Lib\bootstrap\css\bootstrap.rtl.min.css" />
+    <None Include="wwwroot\Lib\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\Lib\bootstrap\js\bootstrap.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
